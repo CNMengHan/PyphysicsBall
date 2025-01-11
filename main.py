@@ -348,7 +348,6 @@ def main():
                     if ball and isinstance(ball, Ball):
                         ball.update(time_scale)
                 
-
                 if len(balls) < 100:  
                     iterations = 3
                 else:
