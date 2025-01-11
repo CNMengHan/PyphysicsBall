@@ -6,6 +6,8 @@ A physics-based ball simulation sandbox built with Pygame, featuring realistic p
 ![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![Pygame](https://img.shields.io/badge/pygame-2.0+-blue.svg)
 
+![Game Screenshot](img/!pyg20250112-061032.png)
+
 ## 🎮 Features
 
 - **Realistic Physics**: Implements gravity, elastic collisions, and momentum conservation

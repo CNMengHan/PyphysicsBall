@@ -278,6 +278,7 @@ def main():
         gravity_slider.value = 0.2  
         base_time_scale = 1.0
         close_button = CloseButton()
+        
         while True:
             try:
                 mouse_pos = pygame.mouse.get_pos()
@@ -295,6 +296,7 @@ def main():
                                 balls = [ball for ball in balls if 
                                         ((ball.x - mouse_pos[0])**2 + 
                                          (ball.y - mouse_pos[1])**2) > clear_radius**2]
+                                
                             last_click_time = current_time
                             for ball in balls:
                                 dx = mouse_pos[0] - ball.x
@@ -344,6 +346,7 @@ def main():
                 time_scale = max(0.1, min(time_scale, 2.0))
                 Ball.gravity_scale = gravity_slider.value * 5.0
                 balls = [ball for ball in balls if ball.y < HEIGHT + 100]
+                
                 for ball in balls:
                     if ball and isinstance(ball, Ball):
                         ball.update(time_scale)
